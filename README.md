@@ -16,7 +16,7 @@ Please cite the above paper if you use this code.
 2. install requirements:
    > pip install -r requirements.txt
 
-### Train a SAN Model
+### Train a MT-SAN Model
 1. prepare data
    > ./prepare_data.sh
 2. train a model: See example codes in run.sh
