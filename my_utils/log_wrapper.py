@@ -1,0 +1,29 @@
+'''
+Created January, 2017
+Author: xiaodl@microsoft.com
+'''
+
+import logging
+from time import gmtime, strftime
+import sys
+
+def create_logger(name, silent=False, to_disk=False, log_file=None):
+    # setup logger
+    # print('create logger')
+    log = logging.getLogger(name)
+    if not log.handlers:
+        log.setLevel(logging.DEBUG)
+        formatter = logging.Formatter(fmt='%(asctime)s %(message)s', datefmt='%m/%d/%Y %I:%M:%S')
+        if not silent:
+            ch = logging.StreamHandler(sys.stdout)
+            ch.setLevel(logging.INFO)
+            ch.setFormatter(formatter)
+            log.addHandler(ch)
+        if to_disk:
+            log_file = log_file if log_file is not None else strftime("%Y-%m-%d-%H-%M-%S.log", gmtime())
+            fh = logging.FileHandler(log_file, encoding='utf-8')
+            fh.setLevel(logging.DEBUG)
+            fh.setFormatter(formatter)
+            log.addHandler(fh)
+    log.propagate = False
+    return log

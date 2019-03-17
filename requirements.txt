@@ -1,0 +1,6 @@
+msgpack-python==0.5.6
+pandas==0.22.0
+spacy==1.9.0
+tqdm
+allennlp
+pytorch==0.4.1
