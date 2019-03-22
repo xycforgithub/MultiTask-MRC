@@ -12,9 +12,9 @@ Please cite the above paper if you use this code.
 ## Results
 We report single-model results produced by this package as follows.
 
-| Dataset | EM/F1 on Dev | 
+| Dataset | EM/F1 | 
 | ------- | ------- | 
-| `SQuAD v1.1` (Rajpurkar et al., 2016) | **81.6**/**88.2** |
+| `SQuAD v1.1` (Rajpurkar et al., 2016) | **81.6**/**88.2** (development set) |
 | `NewsQA` (Trischler et al., 2016)| **59.9**/**72.6** (vs. 46.5/69.4 Human Performance)|
 
 ## Quickstart 
@@ -31,7 +31,7 @@ We report single-model results produced by this package as follows.
 
 2. run docker </br>
    ```> docker run -it --rm --runtime nvidia  allenlao/pytorch-mt-dnn:v0.1 bash``` </br>
-    Please refere the following link if you first use docker: https://docs.docker.com/
+    Please refer to the following link if you first use docker: https://docs.docker.com/
 
 
 ### Train a MT-SAN Model
