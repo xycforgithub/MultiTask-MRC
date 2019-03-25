@@ -37,7 +37,7 @@ We report single-model results produced by this package as follows.
 #### Train a MT-SAN Model
 1. prepare data
    > ./prepare_data.sh
-2. train a model: See example codes in run.sh
+2. train a model: See example codes in [run.sh](https://github.com/xycforgithub/MultiTask-MRC/blob/master/run.sh)
 
 #### Pretrained Models
 You can download pretrained models with the best SQuAD performance [here](https://cmu.box.com/s/uorjtu3gtul7emrb2lh6ynqdue12dxdp).
