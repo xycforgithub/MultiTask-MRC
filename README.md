@@ -34,16 +34,17 @@ We report single-model results produced by this package as follows.
     Please refer to the following link if you first use docker: https://docs.docker.com/
 
 
-### Train a MT-SAN Model
+#### Train a MT-SAN Model
 1. prepare data
    > ./prepare_data.sh
 2. train a model: See example codes in run.sh
 
-## Pretrained Models
-1. You can download pretrained models with the best SQuAD performance [here](https://cmu.box.com/s/uorjtu3gtul7emrb2lh6ynqdue12dxdp).
+#### Pretrained Models
+You can download pretrained models with the best SQuAD performance [here](https://cmu.box.com/s/uorjtu3gtul7emrb2lh6ynqdue12dxdp).
 
 ## Notes and Acknowledgments
 The code is developed based on the original SAN code: https://github.com/kevinduh/san_mrc
+
 Related: <a href="https://arxiv.org/abs/1901.11504">MT-DNN</a>
 
 by
